@@ -18,6 +18,11 @@
 		B6CB51F61711133300A85449 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CB51F51711133300A85449 /* Default-568h@2x.png */; };
 		B6CB51F91711133300A85449 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CB51F81711133300A85449 /* ViewController.m */; };
 		B6CB51FC1711133300A85449 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CB51FA1711133300A85449 /* ViewController.xib */; };
+		B6CB52051711138300A85449 /* WZRichTextVew.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CB52041711138300A85449 /* WZRichTextVew.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6CB52091711182600A85449 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CB52081711182600A85449 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6CB520C17111DDE00A85449 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CB520A17111C5800A85449 /* libicucore.dylib */; };
+		B6CB520F17114C7D00A85449 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CB520E17114C7D00A85449 /* CoreText.framework */; };
+		B6CB521217115F7E00A85449 /* MarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CB521117115F7E00A85449 /* MarkupParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,14 @@
 		B6CB51F71711133300A85449 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B6CB51F81711133300A85449 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B6CB51FB1711133300A85449 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B6CB52031711138300A85449 /* WZRichTextVew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZRichTextVew.h; sourceTree = "<group>"; };
+		B6CB52041711138300A85449 /* WZRichTextVew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZRichTextVew.m; sourceTree = "<group>"; };
+		B6CB52071711182600A85449 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		B6CB52081711182600A85449 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		B6CB520A17111C5800A85449 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		B6CB520E17114C7D00A85449 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B6CB521017115F7E00A85449 /* MarkupParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkupParser.h; sourceTree = "<group>"; };
+		B6CB521117115F7E00A85449 /* MarkupParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkupParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CB520F17114C7D00A85449 /* CoreText.framework in Frameworks */,
+				B6CB520C17111DDE00A85449 /* libicucore.dylib in Frameworks */,
 				B6CB51E01711133300A85449 /* UIKit.framework in Frameworks */,
 				B6CB51E21711133300A85449 /* Foundation.framework in Frameworks */,
 				B6CB51E41711133300A85449 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +88,8 @@
 		B6CB51DE1711133300A85449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6CB520A17111C5800A85449 /* libicucore.dylib */,
+				B6CB520E17114C7D00A85449 /* CoreText.framework */,
 				B6CB51DF1711133300A85449 /* UIKit.framework */,
 				B6CB51E11711133300A85449 /* Foundation.framework */,
 				B6CB51E31711133300A85449 /* CoreGraphics.framework */,
@@ -83,6 +100,8 @@
 		B6CB51E51711133300A85449 /* WZRichTextView */ = {
 			isa = PBXGroup;
 			children = (
+				B6CB52061711182600A85449 /* RegexKitLite */,
+				B6CB52021711136000A85449 /* Classes */,
 				B6CB51EE1711133300A85449 /* AppDelegate.h */,
 				B6CB51EF1711133300A85449 /* AppDelegate.m */,
 				B6CB51F71711133300A85449 /* ViewController.h */,
@@ -105,6 +124,26 @@
 				B6CB51F51711133300A85449 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6CB52021711136000A85449 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6CB521017115F7E00A85449 /* MarkupParser.h */,
+				B6CB521117115F7E00A85449 /* MarkupParser.m */,
+				B6CB52031711138300A85449 /* WZRichTextVew.h */,
+				B6CB52041711138300A85449 /* WZRichTextVew.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B6CB52061711182600A85449 /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				B6CB52071711182600A85449 /* RegexKitLite.h */,
+				B6CB52081711182600A85449 /* RegexKitLite.m */,
+			);
+			path = RegexKitLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +215,9 @@
 				B6CB51EC1711133300A85449 /* main.m in Sources */,
 				B6CB51F01711133300A85449 /* AppDelegate.m in Sources */,
 				B6CB51F91711133300A85449 /* ViewController.m in Sources */,
+				B6CB52051711138300A85449 /* WZRichTextVew.m in Sources */,
+				B6CB52091711182600A85449 /* RegexKitLite.m in Sources */,
+				B6CB521217115F7E00A85449 /* MarkupParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

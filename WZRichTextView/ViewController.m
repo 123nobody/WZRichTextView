@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "WZRichTextVew.h"
+
 @interface ViewController ()
 
 @end
@@ -17,7 +19,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    WZRichTextVew *view = [[WZRichTextVew alloc] initWithFrame:CGRectMake(10, 10, 300, 440)];
+    view.content = @"asdfghjkl";
+    view.content = @"asda1@23134-413-2421'fs42";
+    view.content = @"@asda1@23@134-413-2421'fs42@";
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning
